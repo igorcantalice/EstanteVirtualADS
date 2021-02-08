@@ -1,0 +1,231 @@
+/* LIMPAR FORMATAÇÃO PADRÃO DOS NAVEGADORES*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/*
+*** FORMATAÇÃO GERAL DA PÁGINA ***
+*/
+body{
+	font-family: 'Open Sans';
+	font-size: 1em;
+	background-color: #f2f2f2;
+	background-image: url("https://www.transparenttextures.com/patterns/bright-squares.png");
+	word-wrap: break-word;
+}
+
+/*
+*** LAYOUT DE CABEÇALHO ***
+*/
+#area-cabecalho{
+	font-size: 2.5em;
+	color: white;
+	text-shadow: 2px 2px 2px #2f2f2f;
+	text-align: center;
+	width: 100%;
+	padding: 30px 0px; 
+	background-color:  transparent;
+	display: flex;
+	flex-direction: column;
+}
+
+#area-navmenu{
+	margin-top: 15px;
+	padding: 10px;
+	background: #339966;
+	color: white;
+	width: 100%;
+	text-align: center;
+	font-size: 0.5em;
+	text-shadow: none;
+}
+
+/*
+*** LAYOUT DO MENU PRINCIPAL ***
+*/
+#area-menu{
+	background-color: white;
+	width: auto;
+	text-align: center;
+	margin: 50px 200px;
+	padding: 0px 30px;
+	border: 4px solid #339966;
+}
+/*
+*** LAYOUT DA ÁREA GERAL DAS DISCIPLINAS ***
+*/
+#area-geral{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+	display: flex;
+}
+
+#area-filtros{
+	width: 18%;
+	height:fit-content;
+	margin-right: 25px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.filtros .categoriaPeriodo{
+	display: block;
+	width: 100%;
+	padding:25px 0px;
+	margin-bottom: 10px;
+	color: white;
+	background-color: #339966;
+	text-align: center;
+	text-decoration:none;
+	font-size: 1.1em;
+}
+
+.filtros .categoriaPeriodo:hover{
+	background-color: white;
+	color: #339966;
+}
+
+.filtros .ct_periodo-active{
+	background: #2f2f2f;
+	color: white;
+}
+
+
+#area-rodape{
+	width: 100%;
+	background:#339966;
+	color: white;
+	text-align: center;
+	margin-top: 3%;
+	padding: 10px;
+}
+
+#area-rodape a{
+	text-decoration: none;
+	color: white;
+}
+
+#area-catalogo{
+	width: 82%;	
+	display: flex;
+	flex-wrap: wrap;
+	background: white;
+}
+
+#area-catalogo .area-livro{
+	width: 30%;
+	
+}
+
+#area-catalogo .area-livro img {
+	width: 100%;
+}
+
+.area-livro,
+.area-livro a{
+	margin: 25px auto 25px auto;
+	text-align:center;
+	width: 100%;
+	object-fit: cover;
+	text-decoration: none;
+	color: #339966;
+	font-weight:600;
+}
+
+.botao{
+	background:#339966;
+	padding: 50px;
+}
+
+.botao:hover{
+	background: white;
+	border: 2px solid #339966;
+	padding: 50px;
+}
+
+.titulo{
+	color: #339966;
+	padding: 10px 0px;
+}
+
+.titulo-disciplina{
+	width:100%;
+	font-size: 1.3em;
+	font-style: italic;
+	color: white;
+	padding: 15px 0px;
+	padding-left: 15px;
+	background-color: #339966;
+	
+}
+
+/*
+*** Formatação do menu ***
+*/
+
+.link{
+	font-size: 1.2em;
+	text-decoration: none;
+}
+.link:link, .link:visited {
+	color: white;
+}
+.link:hover{
+	color: #339966;	
+}
+
+.linkhome{
+	font-size: 1.2em;
+	text-decoration: none;
+}
+.linkhome:link, .linkhome:visited {
+	color: white;
+}
+.linkhome:hover{
+	color: white;	
+}
+
+.linknavmenu{
+	font-size: 1em;
+	text-decoration:none;
+	text-shadow: none;
+	pointer-events: none;
+	
+}
+.linknavmenu:link, .linknavmenu:visited {
+	color: white;
+	text-shadow: none;
+}
+.linknavmenu:hover{
+	color: white;
+	text-shadow: none;
+}
+
+
+.filtro{
+	font-size: 0.9em;
+	padding: 10px 0px;
+
+}
+
+
+.espacamento-filtros{
+	margin: 10px 10px;
+	border-width: 1px;
+	border-color: #339966;
+	border-style: dotted none none none;
+}
+
+h1{
+	text-align: center;
+	color: white;
+	background-color: #339966;
+	font-size: 1.5em;
+}
+
+input[type=checkbox]{
+	padding:5px 10px;
+}
