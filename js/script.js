@@ -1,13 +1,13 @@
-$(document).ready(function(){
-    // ############################
+	$(document).ready(function(){
+    // ADICIONAR CLASSE ATIVA AO PRIMEIRO BOTAO =========================
     $('.filtros .categoriaPeriodo[category="todos"]').addClass('ct_periodo-active');
 
-    // ############################
+    // FILTRANDO PRODUTOS =========================
 	$('.categoriaPeriodo').click(function(){
 		var catProduct = $(this).attr('category');
 		console.log(catProduct);
 
-		// ADICIONAR A CLASSE ATIVA
+		// ADICIONAR A CLASSE ATIVA =========================
 		$('.categoriaPeriodo').removeClass('ct_periodo-active');
 		$(this).addClass('ct_periodo-active');
 
